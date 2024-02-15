@@ -22,6 +22,12 @@ import * as ImagePicker from 'expo-image-picker';
 
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 500);
+
+
 const PlaceholderImage = require('./assets/images/background-image.png');
 
 export default function App() {
